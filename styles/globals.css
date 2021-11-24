@@ -1,0 +1,155 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Input */
+.input-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+
+.input-stylized {
+  background-color: transparent;
+  width: 325px;
+  color: #eeeeee;
+  outline: none;
+  outline-style: none;
+  border: none;
+  border-bottom: solid #eeeeee 1px;
+  padding: 0px 10px;
+  margin: 0px 10px;
+}
+
+textarea {
+  border-bottom: 1px solid #000;
+}
+
+.form-label {
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: .3s;
+}
+.input-stylized:focus~.form-label {
+  left: 20px;
+  top: -5px;
+  font-size: 12px;
+}
+
+/* modal */
+.blur {
+  position: fixed;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  min-height: 70%;
+}
+
+/* ;;;;;;;;;;;;;;;;;;;;; */
+
+/* home page */
+
+.form-item {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+.stylized {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 10px 10px;
+  margin: .5rem;
+  color: white;
+}
+
+/* //////////////////// */
+
+/* menu item */
+.menu-btn {
+  padding: .5rem .25rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  border-bottom: 1px solid white;
+  margin: .25rem;
+  transition: .3s;
+}
+
+.menu-btn:hover {
+  color: pink;
+  border-color: pink;
+}
+/* /////////////////// */
+
+/* header */
+header {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  transition: .3s;
+}
+
+header:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: white;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 25px;
+}
+
+.logo {
+  stroke: white;
+  fill: white;
+}
+
+/* //////////////////////////////////// */
+
+.bgWrap {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+}
+
+
+/* //////////////////////////////////// */
